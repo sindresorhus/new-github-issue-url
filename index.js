@@ -1,11 +1,11 @@
 'use strict';
 
 module.exports = (options = {}) => {
-	let repoUrl = 'https://github.com/';
+	let repoUrl;
 	if (options.repoUrl) {
-		repoUrl += options.repoUrl;
+		repoUrl = options.repoUrl;
 	} else if (options.user && options.repo) {
-		repoUrl += `${options.user}/${options.repo}`;
+		repoUrl = `https://github.com/${options.user}/${options.repo}`;
 	} else {
 		throw new Error('You need to specify either the `repoUrl` option or both the `user` and `repo` options');
 	}
