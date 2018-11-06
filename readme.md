@@ -50,16 +50,22 @@ Returns a URL string.
 
 Type: `Object`
 
+You are required to either specify the `repoUrl` option or both the `user` and `repo` options.
+
+##### repoUrl
+
+Type: `string`
+
+The full URL to the repo.
+
 ##### user
 
-*Required*<br>
 Type: `string`
 
 GitHub username or organization.
 
 ##### repo
 
-*Required*<br>
 Type: `string`
 
 GitHub repo.

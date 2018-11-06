@@ -1,11 +1,16 @@
 'use strict';
 
 module.exports = (options = {}) => {
-	if (!(options.user && options.repo)) {
-		throw new Error('The `user` and `repo` options are required');
+	let repoUrl = 'https://github.com/';
+	if (options.repoUrl) {
+		repoUrl += options.repoUrl;
+	} else if (options.user && options.repo) {
+		repoUrl += `${options.user}/${options.repo}`;
+	} else {
+		throw new Error('You need to specify either the `repoUrl` option or both the `user` and `repo` options');
 	}
 
-	const url = new URL(`https://github.com/${options.user}/${options.repo}/issues/new`);
+	const url = new URL(`${repoUrl}/issues/new`);
 
 	const types = [
 		'body',
