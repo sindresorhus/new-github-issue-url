@@ -1,6 +1,6 @@
 {
 	"name": "new-github-issue-url",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "Generate a URL for opening a new GitHub issue with prefilled title, body, and other fields",
 	"license": "MIT",
 	"repository": "sindresorhus/new-github-issue-url",
