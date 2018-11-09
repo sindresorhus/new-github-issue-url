@@ -31,13 +31,7 @@ opn(url);
 
 [Try the URL](https://github.com/sindresorhus/new-github-issue-url/issues/new?body=%0A%0A%0A---%0AI%27m+a+human.+Please+be+nice.)<br>*(Don't click the "Submit new issue" button!)*
 
-Or with Electron:
-
-```js
-const {shell} = require('electron');
-
-shell.openExternal(url);
-```
+If you use Electron, check out `electron-util`'s [`openNewGitHubIssue()` method](https://github.com/sindresorhus/electron-util#opennewgithubissueoptions).
 
 
 ## API
