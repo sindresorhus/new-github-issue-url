@@ -119,6 +119,11 @@ The project reference format is `user/<project-number>`, for example, if the URL
 *Requires the user to have the permission to add projects.*
 
 
+## Related
+
+- [new-github-release-url](https://github.com/sindresorhus/new-github-release-url) - Generate a URL for opening a new GitHub release with prefilled tag, body, and other fields
+
+
 ## License
 
 MIT © [Sindre Sorhus](https://sindresorhus.com)
