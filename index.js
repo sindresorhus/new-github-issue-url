@@ -41,3 +41,5 @@ module.exports = (options = {}) => {
 
 	return url.toString();
 };
+
+module.exports.default = module.exports;
