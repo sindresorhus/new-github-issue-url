@@ -2,12 +2,12 @@ interface CommonOptions {
 	/**
 	 * The issue body.
 	 */
-	body?: string;
+	readonly body?: string;
 
 	/**
 	 * The issue title.
 	 */
-	title?: string;
+	readonly title?: string;
 
 	/**
 	 * Use an [issue template](https://help.github.com/articles/manually-creating-a-single-issue-template-for-your-repository/).
@@ -16,28 +16,28 @@ interface CommonOptions {
 	 *
 	 * 'unicorn.md' // If you want to use a template at `ISSUE_TEMPLATE/unicorn.md`.
 	 */
-	template?: string;
+	readonly template?: string;
 
 	/**
 	 * The labels for the issue.
 	 *
 	 * *Requires the user to have the permission to add labels.*
 	 */
-	labels?: string[];
+	readonly labels?: string[];
 
 	/**
 	 * The milestone for the issue.
 	 *
 	 * *Requires the user to have the permission to add milestone.*
 	 */
-	milestone?: string;
+	readonly milestone?: string;
 
 	/**
 	 * The user to assign to the issue.
 	 *
 	 * *Requires the user to have the permission to add assignee.*
 	 */
-	assignee?: string;
+	readonly assignee?: string;
 
 	/**
 	 * The projects to add the issue to.
@@ -45,26 +45,26 @@ interface CommonOptions {
 	 *
 	 * *Requires the user to have the permission to add projects.*
 	 */
-	projects?: string[];
+	readonly projects?: string[];
 }
 
 interface RepoUrlOptions extends CommonOptions {
 	/**
 	 * The full URL to the repo.
 	 */
-	repoUrl: string;
+	readonly repoUrl: string;
 }
 
 interface UserAndRepoOptions extends CommonOptions {
 	/**
 	 * GitHub username or organization.
 	 */
-	user: string;
+	readonly user: string;
 
 	/**
 	 * GitHub repo.
 	 */
-	repo: string;
+	readonly repo: string;
 }
 
 /**
@@ -90,4 +90,4 @@ export type Options = RepoUrlOptions | UserAndRepoOptions
  * // Then open it
  * opn(url);
  */
-export default function newGithubIssueUrl(options: Readonly<Options>): string;
+export default function newGithubIssueUrl(options: Options): string;
