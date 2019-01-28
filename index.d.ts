@@ -90,4 +90,4 @@ export type Options = RepoUrlOptions | UserAndRepoOptions
  * // Then open it
  * opn(url);
  */
-export default function newGithubIssueUrl(options: Options): string;
+export default function newGithubIssueUrl(options: Readonly<Options>): string;
