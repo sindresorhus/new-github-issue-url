@@ -42,4 +42,5 @@ module.exports = (options = {}) => {
 	return url.toString();
 };
 
+// TODO: Remove this for the next major release
 module.exports.default = module.exports;
