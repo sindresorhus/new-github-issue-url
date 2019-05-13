@@ -16,7 +16,7 @@ $ npm install new-github-issue-url
 
 ```js
 const newGithubIssueUrl = require('new-github-issue-url');
-const opn = require('opn');
+const open = require('open');
 
 const url = newGithubIssueUrl({
 	user: 'sindresorhus',
@@ -26,7 +26,9 @@ const url = newGithubIssueUrl({
 //=> 'https://github.com/sindresorhus/new-github-issue-url/issues/new?body=%0A%0A%0A---%0AI%27m+a+human.+Please+be+nice.'
 
 // Then open it
-opn(url);
+(async () => {
+	await open(url);
+})();
 ```
 
 [Try the URL](https://github.com/sindresorhus/new-github-issue-url/issues/new?body=%0A%0A%0A---%0AI%27m+a+human.+Please+be+nice.)<br>*(Don't click the "Submit new issue" button!)*
@@ -42,7 +44,7 @@ Returns a URL string.
 
 #### options
 
-Type: `Object`
+Type: `object`
 
 You are required to either specify the `repoUrl` option or both the `user` and `repo` options.
 

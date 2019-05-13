@@ -82,7 +82,7 @@ declare const newGithubIssueUrl: {
 	@example
 	```
 	import newGithubIssueUrl = require('new-github-issue-url');
-	import opn = require('opn');
+	import open = require('open');
 
 	const url = newGithubIssueUrl({
 		user: 'sindresorhus',
@@ -92,7 +92,9 @@ declare const newGithubIssueUrl: {
 	//=> 'https://github.com/sindresorhus/new-github-issue-url/issues/new?body=%0A%0A%0A---%0AI%27m+a+human.+Please+be+nice.'
 
 	// Then open it
-	opn(url);
+	(async () => {
+		await open(url);
+	}}();
 	```
 	*/
 	(options: newGithubIssueUrl.Options): string;
