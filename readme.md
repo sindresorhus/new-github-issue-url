@@ -116,7 +116,7 @@ Type: `string[]`
 
 The projects to add the issue to.
 
-The project reference format is `user/<project-number>`, for example, if the URL to the project is `https://github.com/sindresorhus/some-repo/projects/3`, the project reference would be `some-repo/3`.
+The project reference format is `user/repo/<project-number>`, for example, if the URL to the project is `https://github.com/sindresorhus/some-repo/projects/3`, the project reference would be `sindresorhus/some-repo/3`.
 
 *Requires the user to have the permission to add projects.*
 
