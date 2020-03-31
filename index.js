@@ -1,5 +1,7 @@
 'use strict';
 
+const URL = require('url').URL;
+
 module.exports = (options = {}) => {
 	let repoUrl;
 	if (options.repoUrl) {
