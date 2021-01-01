@@ -1,4 +1,4 @@
-# new-github-issue-url [![Build Status](https://travis-ci.com/sindresorhus/new-github-issue-url.svg?branch=master)](https://travis-ci.com/sindresorhus/new-github-issue-url)
+# new-github-issue-url
 
 > Generate a URL for opening a new GitHub issue with prefilled title, body, and other fields
 
