@@ -2,7 +2,7 @@
 
 > Generate a URL for opening a new GitHub issue with prefilled title, body, and other fields
 
-GitHub supports prefilling a new issue by setting [certain search parameters](https://help.github.com/articles/about-automation-for-issues-and-pull-requests-with-query-parameters/). This package simplifies generating such URL.
+GitHub supports prefilling a new issue by setting [certain search parameters](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue#creating-an-issue-from-a-url-query). This package simplifies generating such URL.
 
 
 ## Install
