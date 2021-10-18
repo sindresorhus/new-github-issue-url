@@ -4,19 +4,17 @@
 
 GitHub supports prefilling a new issue by setting [certain search parameters](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue#creating-an-issue-from-a-url-query). This package simplifies generating such URL.
 
-
 ## Install
 
+```sh
+npm install new-github-issue-url
 ```
-$ npm install new-github-issue-url
-```
-
 
 ## Usage
 
 ```js
-const newGithubIssueUrl = require('new-github-issue-url');
-const open = require('open');
+import newGithubIssueUrl from 'new-github-issue-url';
+import open from 'open';
 
 const url = newGithubIssueUrl({
 	user: 'sindresorhus',
@@ -26,15 +24,13 @@ const url = newGithubIssueUrl({
 //=> 'https://github.com/sindresorhus/new-github-issue-url/issues/new?body=%0A%0A%0A---%0AI%27m+a+human.+Please+be+nice.'
 
 // Then open it
-(async () => {
-	await open(url);
-})();
+await open(url);
 ```
 
-[Try the URL](https://github.com/sindresorhus/new-github-issue-url/issues/new?body=%0A%0A%0A---%0AI%27m+a+human.+Please+be+nice.)<br>*(Don't click the "Submit new issue" button!)*
+[Try the URL](https://github.com/sindresorhus/new-github-issue-url/issues/new?body=%0A%0A%0A---%0AI%27m+a+human.+Please+be+nice.)\
+*(Don't click the "Submit new issue" button!)*
 
 If you use Electron, check out `electron-util`'s [`openNewGitHubIssue()` method](https://github.com/sindresorhus/electron-util#opennewgithubissueoptions).
-
 
 ## API
 
@@ -120,12 +116,6 @@ The project reference format is `user/repo/<project-number>`, for example, if th
 
 *Requires the user to have the permission to add projects.*
 
-
 ## Related
 
 - [new-github-release-url](https://github.com/sindresorhus/new-github-release-url) - Generate a URL for opening a new GitHub release with prefilled tag, body, and other fields
-
-
-## License
-
-MIT © [Sindre Sorhus](https://sindresorhus.com)

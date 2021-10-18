@@ -1,6 +1,4 @@
-'use strict';
-
-module.exports = (options = {}) => {
+export default function newGithubIssueUrl(options = {}) {
 	let repoUrl;
 	if (options.repoUrl) {
 		repoUrl = options.repoUrl;
@@ -19,7 +17,7 @@ module.exports = (options = {}) => {
 		'template',
 		'milestone',
 		'assignee',
-		'projects'
+		'projects',
 	];
 
 	for (const type of types) {
@@ -40,7 +38,4 @@ module.exports = (options = {}) => {
 	}
 
 	return url.toString();
-};
-
-// TODO: Remove this for the next major release
-module.exports.default = module.exports;
+}

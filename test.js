@@ -1,5 +1,5 @@
 import test from 'ava';
-import newGithubIssueUrl from '.';
+import newGithubIssueUrl from './index.js';
 
 test('main', t => {
 	const user = 'sindresorhus';
@@ -11,7 +11,7 @@ test('main', t => {
 		user,
 		repo,
 		body,
-		title
+		title,
 	});
 
 	const {searchParams} = new URL(urlString);
@@ -30,7 +30,7 @@ test('repoUrl option', t => {
 	const urlString = newGithubIssueUrl({
 		repoUrl,
 		body,
-		title
+		title,
 	});
 
 	const {searchParams} = new URL(urlString);
@@ -43,5 +43,7 @@ test('repoUrl option', t => {
 test('throws when required options are not specified', t => {
 	t.throws(() => {
 		newGithubIssueUrl();
-	}, /need to specify either/);
+	}, {
+		message: /need to specify either/,
+	});
 });
