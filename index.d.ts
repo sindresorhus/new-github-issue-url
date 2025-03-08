@@ -47,6 +47,11 @@ export interface CommonOptions {
 	_Requires the user to have the permission to add projects._
 	*/
 	readonly projects?: string[];
+
+	/**
+	The [issues type](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/editing-an-issue#adding-or-changing-the-issue-type).
+	*/
+	readonly type?: string;
 }
 
 export interface RepoUrlOptions extends CommonOptions {
