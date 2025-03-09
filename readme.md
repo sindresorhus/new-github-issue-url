@@ -116,6 +116,12 @@ The project reference format is `user/repo/<project-number>`, for example, if th
 
 *Requires the user to have the permission to add projects.*
 
+##### type
+
+Type: `string`
+
+The [issue type](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/editing-an-issue#adding-or-changing-the-issue-type).
+
 ## Related
 
 - [new-github-release-url](https://github.com/sindresorhus/new-github-release-url) - Generate a URL for opening a new GitHub release with prefilled tag, body, and other fields

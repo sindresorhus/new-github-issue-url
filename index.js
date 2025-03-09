@@ -18,6 +18,7 @@ export default function newGithubIssueUrl(options = {}) {
 		'milestone',
 		'assignee',
 		'projects',
+		'type',
 	];
 
 	for (const type of types) {
