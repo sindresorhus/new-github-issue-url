@@ -49,7 +49,7 @@ export interface CommonOptions {
 	readonly projects?: string[];
 
 	/**
-	The [issues type](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/editing-an-issue#adding-or-changing-the-issue-type).
+	The [issue type](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/editing-an-issue#adding-or-changing-the-issue-type).
 	*/
 	readonly type?: string;
 }
