@@ -120,7 +120,7 @@ The project reference format is `user/repo/<project-number>`, for example, if th
 
 Type: `string`
 
-The issues type.
+The [issue type](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/editing-an-issue#adding-or-changing-the-issue-type).
 
 ## Related
 
